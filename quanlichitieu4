@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#define MAX_TRANSACTIONS 100
+
+struct Transaction {
+    char name[50];
+    double amount;
+};
+
+struct TransactionList {
+    struct Transaction transactions[MAX_TRANSACTIONS];
+    int count;
+};
